@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:background="@color/randomail_blue"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
 
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -68,19 +68,31 @@
                     android:textColorHint="@color/randomail_grey"
                     android:textSize="16sp" />
 
-                <com.rey.material.widget.Button
-                    android:id="@+id/login_btn"
-                    android:layout_width="fill_parent"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:layout_margin="4dp"
-                    android:background="@color/randomail_blue"
+                <com.rey.material.widget.EditText
+                    android:id="@+id/confirm_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="start"
                     android:gravity="center"
-                    android:text="@string/lets_go"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp"
-                    app:rd_cornerRadius="3dp"
-                    app:rd_enable="true" />
+                    android:hint="@string/confirm"
+                    android:inputType="textPassword"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="12dp"
+                    android:textColor="@color/randomail_black"
+                    android:textColorHint="@color/randomail_grey"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/cgu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/cgu"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
 
                 <com.rey.material.widget.Button
                     android:id="@+id/register_btn"
@@ -88,9 +100,9 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center_horizontal|bottom"
                     android:layout_margin="4dp"
-                    android:background="@color/randomail_red"
+                    android:background="@color/randomail_blue"
                     android:gravity="center"
-                    android:text="@string/create_account"
+                    android:text="@string/lets_go"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     app:rd_cornerRadius="3dp"

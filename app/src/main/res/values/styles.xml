@@ -4,6 +4,7 @@
         <item name="colorPrimary">@color/randomail_blue</item>
         <item name="colorPrimaryDark">@color/randomail_blue</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="elevation">0dp</item>
         <!-- Support library compatibility -->
     </style>
 

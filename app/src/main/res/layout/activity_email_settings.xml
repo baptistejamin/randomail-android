@@ -32,7 +32,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginRight="5dp"
-                    android:background="@color/randomail_grey"
+                    android:background="#fff"
                     android:src="@drawable/ic_autorenew_black_24dp" />
 
                 <com.rey.material.widget.EditText

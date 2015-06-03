@@ -43,6 +43,28 @@ public class ApiServices {
         client.post(null, path + "/user/login", se, "application/json", callback);
     }
 
+    public static void register(String email, String password, JsonHttpResponseHandler callback) {
+        AsyncHttpClient client = new AsyncHttpClient();
+        JSONObject query = null;
+        StringEntity se = null;
+        try {
+
+            query = new JSONObject();
+            query.put("email", email);
+            query.put("password", password);
+            se = new StringEntity(query.toString(), "UTF-8");
+
+            se.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json; charset=UTF-8"));
+            se.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "text/plain;charset=UTF-8"));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        client.post(null, path + "/user/register", se, "application/json", callback);
+    }
+
     public static void getEmails(JsonHttpResponseHandler callback) {
         AsyncHttpClient client = new AsyncHttpClient();
         client.setBasicAuth(RandomailApplication.mUserId, RandomailApplication.mAuthToken);

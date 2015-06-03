@@ -41,9 +41,11 @@ public class EmailsAdapter extends RecyclerView.Adapter<EmailsAdapter.ViewHolder
 
         holder.email.setText(email.email);
         holder.label.setText(email.label);
+
         /*if(email.label.length()==0){
             holder.label.setVisibility(View.GONE);
         }*/
+
         holder.forwards.setText("");
 
         for (int i = 0; i < email.forwardTo.size(); i++) {
