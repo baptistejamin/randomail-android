@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Randomail</string>
+    <string name="menu">Menu</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="lets_go">Let\'s go!</string>
+    <string name="login_failed">Login failed</string>
+    <string name="login_in_progress">Login in progress</string>
+    <string name="action_settings">Settings</string>
+    <string name="active_aliases">Active aliases</string>
+    <string name="paused_aliases">Paused aliases</string>
+    <string name="action_search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="pause">Pause!</string>
+    <string name="active">Active</string>
+    <string name="delete">Delete</string>
+    <string name="copy">Copy</string>
+    <string name="email_copied">Email copied</string>
+    <string name="create_alias">Create an alias</string>
+    <string name="create_the_alias">Create the alias</string>
+    <string name="alias_creation_failed">Alias creation failed</string>
+    <string name="alias_creation_in_progress">Alias creation in progress</string>
+</resources>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:id="@+id/email_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="3sp"
+                android:text="Email"
+                android:textColor="@color/randomail_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="3sp"
+                android:layout_marginTop="25sp"
+                android:layout_toEndOf="@+id/email"
+                android:layout_toRightOf="@id/email"
+                android:ellipsize="marquee"
+                android:paddingBottom="20sp"
+                android:text="Label"
+                android:textColor="@color/randomail_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forwards"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="3sp"
+                android:layout_toEndOf="@+id/label"
+                android:layout_toRightOf="@id/email"
+                android:textColor="@color/randomail_grey"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

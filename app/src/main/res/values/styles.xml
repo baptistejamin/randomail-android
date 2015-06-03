@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/randomail_blue</item>
+        <item name="colorPrimaryDark">@color/randomail_blue</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/BlueActionBarCompat</item>
+    </style>
+
+    <!-- Green ActionBar AppCompat style -->
+    <style name="BlueActionBarCompat" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/randomail_blue</item>
+        <item name="android:icon">@mipmap/ic_launcher</item>
+        <item name="titleTextStyle">@style/whiteText</item>
+        <item name="elevation">0dp</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/randomail_blue</item>
+    </style>
+
+    <style name="whiteText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#eee</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- No action bar activity theme. -->
+    <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+</resources>

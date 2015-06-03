@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="net.randomail.activities.EmailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <it.neokree.materialtabs.MaterialTabHost
+            android:id="@+id/emailTabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:accentColor="@color/randomail_blue"
+            app:primaryColor="@color/randomail_blue" />
+
+        <ViewFlipper
+            android:id="@+id/listviews_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="2dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/active_emails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical" />
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:cardElevation="2dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/paused_emails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical" />
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </ViewFlipper>
+    </LinearLayout>
+
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/create_alias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_iconSrc="@drawable/ic_randomail"
+        app:fab_backgroundColor="@color/randomail_blue"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

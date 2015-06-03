@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="randomail_blue">#01BDD5</color>
+    <color name="randomail_red">#F44336</color>
+    <color name="randomail_black">#000000</color>
+    <color name="randomail_grey">#aaa</color>
+</resources>
