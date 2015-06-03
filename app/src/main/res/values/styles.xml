@@ -1,21 +1,10 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/randomail_blue</item>
         <item name="colorPrimaryDark">@color/randomail_blue</item>
         <item name="android:windowContentOverlay">@null</item>
         <!-- Support library compatibility -->
-        <item name="actionBarStyle">@style/BlueActionBarCompat</item>
-    </style>
-
-    <!-- Green ActionBar AppCompat style -->
-    <style name="BlueActionBarCompat" parent="@style/Widget.AppCompat.Light.ActionBar">
-        <item name="android:background">@color/randomail_blue</item>
-        <item name="android:icon">@mipmap/ic_launcher</item>
-        <item name="titleTextStyle">@style/whiteText</item>
-        <item name="elevation">0dp</item>
-        <!-- Support library compatibility -->
-        <item name="background">@color/randomail_blue</item>
     </style>
 
     <style name="whiteText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
